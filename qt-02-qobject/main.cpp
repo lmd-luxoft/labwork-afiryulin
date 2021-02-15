@@ -73,10 +73,12 @@ int main(int argc, char *argv[])
     Human *parent = generateFamily();
 
 	// TODO: dump tree info using standard Qt method
-	
+    parent->dumpObjectTree();
+
     printTreeInfo(parent);
 
     // TODO: delete here what need only
+    delete  parent;
 
     return a.exec();
 }
